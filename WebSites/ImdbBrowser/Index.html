@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Imdb Browser</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Content/jquery.mobile-1.4.5.min.css" />
+    <script src="Scripts/jquery-2.2.2.min.js"></script>
+    <script src="Scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script src="App.js"></script>
+</head>
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>Imdb Browser</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div>
+                <form id="form">
+                    <label for="input">Search:</label>
+                    <input type="search" name="input" id="search-input">
+                </form>
+            </div>
+            <div>
+                <ul id="search-results" data-role="listview" data-inset="true"></ul>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+        </div>
+    </div>
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <h1>Imdb Browser</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div class="ui-corner-all" style="text-align: center">
+                <div class="ui-bar ui-bar-a">
+                    <h1 id="Title"></h1>
+                </div>
+                <div class="ui-body ui-body-a">
+                    <p id="Content"></p>
+                    <img id="Poster" />
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+        </div>
+    </div>
+</body>
+</html>
