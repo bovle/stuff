@@ -17,7 +17,7 @@ $(document).on('pagecreate', '#page1', function () {
                 }
             }).listview("refresh");
 
-            $("a").click( function (event) {
+            $("#page1 a").click( function (event) {
                 event.preventDefault();
                 sessionStorage.selectedId = $(this).attr("id");
                 $.mobile.changePage("#page2");
